@@ -11,6 +11,10 @@
 
     "include_dirs": [ "src/include" ],
 
+    "defines": [
+      "BORINGSSL_IMPLEMENTATION",
+    ],
+
     "sources": [
       "<@(boringssl_ssl_sources)",
       "<@(boringssl_crypto_sources)",
